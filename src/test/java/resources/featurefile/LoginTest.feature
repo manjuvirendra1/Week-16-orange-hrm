@@ -4,7 +4,7 @@ Feature: Login page test
 
   Background: I am on homepage
 
- @sanity
+ @sanity @regression
   Scenario: User should login successfully
     When I enter username
     And I enter password
@@ -12,7 +12,7 @@ Feature: Login page test
     Then I navigate to Dashboard page
     And I should verify WelCome message
 
- @smoke
+ @smoke @regression
   Scenario: User should see the Logo on homepage
     When I enter username
     And I enter password
